@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.7</version>
+		<relativePath />
+	</parent>
+	<groupId>com.hotfoot.rapid.au</groupId>
+	<artifactId>housing</artifactId>
+	<version>1.1.6</version>
+	<packaging>pom</packaging>
+	<name>housing</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<jackson.version>2.9.7</jackson.version>
+		<log4j2.version>2.17.1</log4j2.version>
+		<rapid.common.version>2.0.3</rapid.common.version>
+		<rapid.contract.version>2.0.3</rapid.contract.version>
+		<rapid.au.version>1.1.6</rapid.au.version>
+		<rapid.au.housing.version>1.1.6</rapid.au.housing.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.6</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+			<version>4.13</version>
+		</dependency>
+	</dependencies>
+	<modules>
+		<!--<module>app-pojo-housing</module> -->
+		<module>datamodel-housing</module>
+		<module>customerportal-housing</module>
+		<module>ruleengine-pojo-housing</module>
+		<module>housing-rule-engine-client</module>
+	</modules>
+</project>
